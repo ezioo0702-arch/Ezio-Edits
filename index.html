@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Editor Portfolio | Ezio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://player.vimeo.com/api/player.js"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'ac-red': '#dc2626', // A strong crimson
+              'ac-dark': '#050505', // Deep black
+              'ac-gray': '#1a1a1a',
+              // Eagle Vision Palette
+              'eagle-gold': '#fbbf24', // Glowing Gold
+              'eagle-dark': '#0f172a', // Deep Slate Blue
+              'eagle-blue': '#3b82f6', // Bright Blue highlight
+            },
+            fontFamily: {
+              sans: ['Rajdhani', 'sans-serif'],
+              serif: ['Cinzel', 'serif'],
+            },
+            animation: {
+              'pulse-fast': 'pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+              'spin-slow': 'spin 3s linear infinite',
+            },
+          },
+        },
+        plugins: [
+          function({ addVariant }) {
+            // Adds the 'eagle:' modifier
+            // Targets elements when the 'eagle-vision-active' class is present on the body
+            addVariant('eagle', 'body.eagle-vision-active &');
+          }
+        ]
+      }
+    </script>
+    <style>
+      /* Custom scrollbar for the Ezio feel */
+      ::-webkit-scrollbar {
+        width: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #050505;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #dc2626;
+      }
+      body {
+        background-color: #050505;
+        color: #e5e5e5;
+        overflow-x: hidden;
+        transition: background-color 0.7s ease, filter 0.7s ease;
+      }
+      
+      /* Global Eagle Vision Filters */
+      body.eagle-vision-active {
+        /* Subtle grayscale and contrast boost for the world */
+        background-color: #0f172a;
+      }
+      
+      body.eagle-vision-active img,
+      body.eagle-vision-active video {
+        filter: grayscale(80%) contrast(120%) sepia(20%) hue-rotate(180deg);
+        transition: filter 0.7s ease;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+    "framer-motion": "https://aistudiocdn.com/framer-motion@^12.23.24",
+    "clsx": "https://aistudiocdn.com/clsx@^2.1.1",
+    "tailwind-merge": "https://aistudiocdn.com/tailwind-merge@^2.5.5",
+    "gsap": "https://aistudiocdn.com/gsap@^3.13.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+{
+  "name": "Ezio Portfolio",
+  "description": "A high-performance video editing portfolio with an Assassin's Creed inspired aesthetic and AI-powered assistant.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
