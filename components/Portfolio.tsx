@@ -80,7 +80,7 @@ const PROJECTS: Project[] = [
   {
     id: '9',
     title: 'Papa Pizzeria',
-    category: 'Gaming',
+    category: 'Documentary',
     thumbnailUrl: 'https://vumbnail.com/1140303734_large.jpg',
     videoUrl: 'https://player.vimeo.com/video/1140303734?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&loop=1',
     description: 'A story about Papa Pizzeria franchise',
@@ -88,8 +88,8 @@ const PROJECTS: Project[] = [
   },
   {
     id: '10',
-    title: 'Papaji',
-    category: 'Gaming',
+    title: 'Papa Pizzeria',
+    category: 'Documentary',
     thumbnailUrl: 'https://vumbnail.com/1140702801_large.jpg',
     videoUrl: 'https://player.vimeo.com/video/1140702801?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&loop=1',
     description: 'A story about Papa Pizzeria franchise',
