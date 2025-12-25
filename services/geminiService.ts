@@ -35,7 +35,7 @@ let aiInstance: GoogleGenAI | null = null;
 const getAI = (): GoogleGenAI => {
   if (!aiInstance) {
     if (!process.env.API_KEY) {
-      console.warn("AIzaSyA9BrcjT1epNqwiMB_wzjRzpKII3mIseWQ");
+      console.warn("API_KEY is missing in environment variables.");
     }
     aiInstance = new GoogleGenAI({ apiKey: process.env.API_KEY });
   }
